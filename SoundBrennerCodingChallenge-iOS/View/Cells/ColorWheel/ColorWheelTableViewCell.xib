@@ -25,10 +25,20 @@
                             <constraint firstAttribute="width" secondItem="cgB-II-8eB" secondAttribute="height" multiplier="1:1" id="DZO-LX-p89"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWc-uH-tAg">
+                        <rect key="frame" x="142.66666666666666" y="142.66666666666666" width="35" height="35"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="RGM-Oq-sk5"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="WWc-uH-tAg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="EOT-f7-1YJ"/>
                     <constraint firstItem="cgB-II-8eB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ebw-EU-wSn"/>
+                    <constraint firstItem="WWc-uH-tAg" firstAttribute="width" secondItem="WWc-uH-tAg" secondAttribute="height" multiplier="1:1" id="e8U-TB-cgD"/>
                     <constraint firstAttribute="trailing" secondItem="cgB-II-8eB" secondAttribute="trailing" id="gt1-9d-P0z"/>
+                    <constraint firstItem="WWc-uH-tAg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hv7-4w-uTg"/>
                     <constraint firstAttribute="bottom" secondItem="cgB-II-8eB" secondAttribute="bottom" id="nL6-gb-9A4"/>
                     <constraint firstItem="cgB-II-8eB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="z2w-sn-L9P"/>
                     <constraint firstItem="cgB-II-8eB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="zY9-1g-CVI"/>
@@ -36,6 +46,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="colorPicker" destination="WWc-uH-tAg" id="yjo-AG-u3A"/>
                 <outlet property="colorWheel" destination="cgB-II-8eB" id="F6m-Dt-kuA"/>
             </connections>
             <point key="canvasLocation" x="29.007633587786259" y="-72.535211267605632"/>
@@ -44,6 +55,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

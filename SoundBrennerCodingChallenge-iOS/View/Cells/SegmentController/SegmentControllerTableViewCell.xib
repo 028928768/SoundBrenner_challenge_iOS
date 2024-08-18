@@ -20,7 +20,7 @@
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8Pw-o8-Lb1" userLabel="Segment Stack View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dG-AV-6T7" userLabel="Blue" customClass="HighlightButton" customModule="ColourWheelApp" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dG-AV-6T7" userLabel="Blue" customClass="HighlightButton" customModule="SoundBrennerCodingChallenge_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZP-ow-wR6">
@@ -40,8 +40,11 @@
                                     <constraint firstItem="gZP-ow-wR6" firstAttribute="centerY" secondItem="3dG-AV-6T7" secondAttribute="centerY" id="7x2-yM-hSZ"/>
                                     <constraint firstItem="gZP-ow-wR6" firstAttribute="centerX" secondItem="3dG-AV-6T7" secondAttribute="centerX" id="bqL-8e-B0k"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="didTapBlueButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kgz-rd-BO9"/>
+                                </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PL5-LZ-x6I" userLabel="Green" customClass="HighlightButton" customModule="ColourWheelApp" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PL5-LZ-x6I" userLabel="Green" customClass="HighlightButton" customModule="SoundBrennerCodingChallenge_iOS" customModuleProvider="target">
                                 <rect key="frame" x="106.66666666666666" y="0.0" width="106.66666666666666" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dw-MI-E2L">
@@ -61,8 +64,11 @@
                                     <constraint firstItem="0dw-MI-E2L" firstAttribute="centerY" secondItem="PL5-LZ-x6I" secondAttribute="centerY" id="AOr-nU-unR"/>
                                     <constraint firstItem="0dw-MI-E2L" firstAttribute="centerX" secondItem="PL5-LZ-x6I" secondAttribute="centerX" id="nDS-fF-1tn"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="didTapGreenButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oNa-aw-vRB"/>
+                                </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZF-uy-OsA" userLabel="Red" customClass="HighlightButton" customModule="ColourWheelApp" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZF-uy-OsA" userLabel="Red" customClass="HighlightButton" customModule="SoundBrennerCodingChallenge_iOS" customModuleProvider="target">
                                 <rect key="frame" x="213.33333333333334" y="0.0" width="106.66666666666666" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75l-xr-EA5">
@@ -82,6 +88,9 @@
                                     <constraint firstItem="75l-xr-EA5" firstAttribute="centerX" secondItem="bZF-uy-OsA" secondAttribute="centerX" id="NO2-l9-jyq"/>
                                     <constraint firstItem="75l-xr-EA5" firstAttribute="centerY" secondItem="bZF-uy-OsA" secondAttribute="centerY" id="mVG-6Z-erd"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="didTapRedButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PmD-HS-cDT"/>
+                                </connections>
                             </view>
                         </subviews>
                         <constraints>
