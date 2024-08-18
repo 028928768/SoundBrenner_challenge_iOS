@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+// MARK: - Main Component
+struct MainComponentModel {
+    var component: [Constants.MainComponent]
+}
