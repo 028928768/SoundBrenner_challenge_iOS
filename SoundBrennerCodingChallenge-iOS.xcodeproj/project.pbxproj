@@ -18,6 +18,9 @@
 		B4EF0D982C71EBB500C2FBAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF0D972C71EBB500C2FBAE /* Constants.swift */; };
 		B4EF0D9A2C71EBE400C2FBAE /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF0D992C71EBE400C2FBAE /* UIColorExtension.swift */; };
 		B4EF0D9C2C71EC1200C2FBAE /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF0D9B2C71EC1200C2FBAE /* UIVIewExtension.swift */; };
+		B4EF0DA02C71EE9E00C2FBAE /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF0D9F2C71EE9E00C2FBAE /* ColorWheel.swift */; };
+		B4EF0DA72C71F1BC00C2FBAE /* ColorWheelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF0DA52C71F1BC00C2FBAE /* ColorWheelTableViewCell.swift */; };
+		B4EF0DA82C71F1BC00C2FBAE /* ColorWheelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4EF0DA62C71F1BC00C2FBAE /* ColorWheelTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		B4EF0D972C71EBB500C2FBAE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B4EF0D992C71EBE400C2FBAE /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		B4EF0D9B2C71EC1200C2FBAE /* UIVIewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
+		B4EF0D9F2C71EE9E00C2FBAE /* ColorWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
+		B4EF0DA52C71F1BC00C2FBAE /* ColorWheelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelTableViewCell.swift; sourceTree = "<group>"; };
+		B4EF0DA62C71F1BC00C2FBAE /* ColorWheelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorWheelTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				B46D690D2C71E2AC0083A93E /* ViewController.swift */,
+				B4EF0D9D2C71EE6800C2FBAE /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +103,24 @@
 				B4EF0D9B2C71EC1200C2FBAE /* UIVIewExtension.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B4EF0D9D2C71EE6800C2FBAE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B4EF0D9E2C71EE7700C2FBAE /* ColorWheel */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B4EF0D9E2C71EE7700C2FBAE /* ColorWheel */ = {
+			isa = PBXGroup;
+			children = (
+				B4EF0D9F2C71EE9E00C2FBAE /* ColorWheel.swift */,
+				B4EF0DA52C71F1BC00C2FBAE /* ColorWheelTableViewCell.swift */,
+				B4EF0DA62C71F1BC00C2FBAE /* ColorWheelTableViewCell.xib */,
+			);
+			path = ColorWheel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +184,7 @@
 				B46D69132C71E2AE0083A93E /* Assets.xcassets in Resources */,
 				B46D69162C71E2AE0083A93E /* Base in Resources */,
 				B46D69112C71E2AC0083A93E /* Base in Resources */,
+				B4EF0DA82C71F1BC00C2FBAE /* ColorWheelTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +197,8 @@
 			files = (
 				B46D69202C71E6470083A93E /* ViewModel.swift in Sources */,
 				B4EF0D9A2C71EBE400C2FBAE /* UIColorExtension.swift in Sources */,
+				B4EF0DA02C71EE9E00C2FBAE /* ColorWheel.swift in Sources */,
+				B4EF0DA72C71F1BC00C2FBAE /* ColorWheelTableViewCell.swift in Sources */,
 				B46D690E2C71E2AC0083A93E /* ViewController.swift in Sources */,
 				B46D690A2C71E2AC0083A93E /* AppDelegate.swift in Sources */,
 				B46D690C2C71E2AC0083A93E /* SceneDelegate.swift in Sources */,

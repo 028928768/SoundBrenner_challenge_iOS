@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         // Init commit - Hello SoundBrenner!
+        setupUI()
+        setupData()
     }
     
     private func setupUI() {
@@ -23,6 +25,11 @@ class ViewController: UIViewController {
     
     private func setupData() {
         viewModel.requestMainComponents()
+        
+        // register cells
+        let colourWheelCellNib = UINib(nibName: viewModel.colorWheelCellNib, bundle: nil)
+        tableView.register(colourWheelCellNib, forCellReuseIdentifier: viewModel.colorWheelCellIdentifier)
+        tableView.reloadData()
     }
     
 }
@@ -34,9 +41,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // set cell for row of table
-        let cell = UITableViewCell()
-        return cell
+        if viewModel.objects.component[indexPath.row] == .colorWheel {
+            let cell = tableView.dequeueReusableCell(withIdentifier: viewModel.colorWheelCellIdentifier) as! ColorWheelTableViewCell
+            return cell
+        } else {
+            let cell = UITableViewCell()
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
