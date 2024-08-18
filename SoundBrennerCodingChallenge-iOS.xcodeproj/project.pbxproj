@@ -21,6 +21,12 @@
 		B4EF0DA02C71EE9E00C2FBAE /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF0D9F2C71EE9E00C2FBAE /* ColorWheel.swift */; };
 		B4EF0DA72C71F1BC00C2FBAE /* ColorWheelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF0DA52C71F1BC00C2FBAE /* ColorWheelTableViewCell.swift */; };
 		B4EF0DA82C71F1BC00C2FBAE /* ColorWheelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4EF0DA62C71F1BC00C2FBAE /* ColorWheelTableViewCell.xib */; };
+		B4EF0DAB2C71F41B00C2FBAE /* HighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF0DAA2C71F41B00C2FBAE /* HighlightButton.swift */; };
+		B4EF0DAE2C71F46B00C2FBAE /* SegmentControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF0DAC2C71F46B00C2FBAE /* SegmentControllerTableViewCell.swift */; };
+		B4EF0DAF2C71F46B00C2FBAE /* SegmentControllerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4EF0DAD2C71F46B00C2FBAE /* SegmentControllerTableViewCell.xib */; };
+		B4EF0DB22C71F6DF00C2FBAE /* FloatingLabelSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF0DB12C71F6DF00C2FBAE /* FloatingLabelSlider.swift */; };
+		B4EF0DB52C71F70200C2FBAE /* BrightnessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF0DB32C71F70200C2FBAE /* BrightnessTableViewCell.swift */; };
+		B4EF0DB62C71F70200C2FBAE /* BrightnessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4EF0DB42C71F70200C2FBAE /* BrightnessTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,12 @@
 		B4EF0D9F2C71EE9E00C2FBAE /* ColorWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 		B4EF0DA52C71F1BC00C2FBAE /* ColorWheelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelTableViewCell.swift; sourceTree = "<group>"; };
 		B4EF0DA62C71F1BC00C2FBAE /* ColorWheelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorWheelTableViewCell.xib; sourceTree = "<group>"; };
+		B4EF0DAA2C71F41B00C2FBAE /* HighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightButton.swift; sourceTree = "<group>"; };
+		B4EF0DAC2C71F46B00C2FBAE /* SegmentControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControllerTableViewCell.swift; sourceTree = "<group>"; };
+		B4EF0DAD2C71F46B00C2FBAE /* SegmentControllerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentControllerTableViewCell.xib; sourceTree = "<group>"; };
+		B4EF0DB12C71F6DF00C2FBAE /* FloatingLabelSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelSlider.swift; sourceTree = "<group>"; };
+		B4EF0DB32C71F70200C2FBAE /* BrightnessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessTableViewCell.swift; sourceTree = "<group>"; };
+		B4EF0DB42C71F70200C2FBAE /* BrightnessTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrightnessTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				B4EF0D9E2C71EE7700C2FBAE /* ColorWheel */,
+				B4EF0DA92C71F3F500C2FBAE /* SegmentController */,
+				B4EF0DB02C71F6B800C2FBAE /* BrightnessSetting */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -121,6 +135,26 @@
 				B4EF0DA62C71F1BC00C2FBAE /* ColorWheelTableViewCell.xib */,
 			);
 			path = ColorWheel;
+			sourceTree = "<group>";
+		};
+		B4EF0DA92C71F3F500C2FBAE /* SegmentController */ = {
+			isa = PBXGroup;
+			children = (
+				B4EF0DAA2C71F41B00C2FBAE /* HighlightButton.swift */,
+				B4EF0DAC2C71F46B00C2FBAE /* SegmentControllerTableViewCell.swift */,
+				B4EF0DAD2C71F46B00C2FBAE /* SegmentControllerTableViewCell.xib */,
+			);
+			path = SegmentController;
+			sourceTree = "<group>";
+		};
+		B4EF0DB02C71F6B800C2FBAE /* BrightnessSetting */ = {
+			isa = PBXGroup;
+			children = (
+				B4EF0DB12C71F6DF00C2FBAE /* FloatingLabelSlider.swift */,
+				B4EF0DB32C71F70200C2FBAE /* BrightnessTableViewCell.swift */,
+				B4EF0DB42C71F70200C2FBAE /* BrightnessTableViewCell.xib */,
+			);
+			path = BrightnessSetting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B46D69132C71E2AE0083A93E /* Assets.xcassets in Resources */,
+				B4EF0DAF2C71F46B00C2FBAE /* SegmentControllerTableViewCell.xib in Resources */,
+				B4EF0DB62C71F70200C2FBAE /* BrightnessTableViewCell.xib in Resources */,
 				B46D69162C71E2AE0083A93E /* Base in Resources */,
 				B46D69112C71E2AC0083A93E /* Base in Resources */,
 				B4EF0DA82C71F1BC00C2FBAE /* ColorWheelTableViewCell.xib in Resources */,
@@ -195,7 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4EF0DB52C71F70200C2FBAE /* BrightnessTableViewCell.swift in Sources */,
 				B46D69202C71E6470083A93E /* ViewModel.swift in Sources */,
+				B4EF0DB22C71F6DF00C2FBAE /* FloatingLabelSlider.swift in Sources */,
+				B4EF0DAE2C71F46B00C2FBAE /* SegmentControllerTableViewCell.swift in Sources */,
 				B4EF0D9A2C71EBE400C2FBAE /* UIColorExtension.swift in Sources */,
 				B4EF0DA02C71EE9E00C2FBAE /* ColorWheel.swift in Sources */,
 				B4EF0DA72C71F1BC00C2FBAE /* ColorWheelTableViewCell.swift in Sources */,
@@ -204,6 +243,7 @@
 				B46D690C2C71E2AC0083A93E /* SceneDelegate.swift in Sources */,
 				B46D691E2C71E6240083A93E /* Model.swift in Sources */,
 				B4EF0D9C2C71EC1200C2FBAE /* UIVIewExtension.swift in Sources */,
+				B4EF0DAB2C71F41B00C2FBAE /* HighlightButton.swift in Sources */,
 				B4EF0D982C71EBB500C2FBAE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

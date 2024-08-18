@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     private func setupUI() {
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.backgroundColor = .sbnBasicDarkGrey
+        self.view.backgroundColor = .sbnBasicDarkGrey
     }
     
     private func setupData() {
@@ -28,7 +30,11 @@ class ViewController: UIViewController {
         
         // register cells
         let colourWheelCellNib = UINib(nibName: viewModel.colorWheelCellNib, bundle: nil)
+        let segmentCellNib = UINib(nibName: viewModel.segmentControllerCellNib, bundle: nil)
+        let brightnessCellNib = UINib(nibName: viewModel.brightnessAdjustCellNib, bundle: nil)
         tableView.register(colourWheelCellNib, forCellReuseIdentifier: viewModel.colorWheelCellIdentifier)
+        tableView.register(segmentCellNib, forCellReuseIdentifier: viewModel.segmentControllerCellIdentifier)
+        tableView.register(brightnessCellNib, forCellReuseIdentifier: viewModel.brightnessAdjustCellIdentifier)
         tableView.reloadData()
     }
     
@@ -43,6 +49,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if viewModel.objects.component[indexPath.row] == .colorWheel {
             let cell = tableView.dequeueReusableCell(withIdentifier: viewModel.colorWheelCellIdentifier) as! ColorWheelTableViewCell
+            return cell
+        } else if viewModel.objects.component[indexPath.row] == .segmentController {
+            let cell = tableView.dequeueReusableCell(withIdentifier: viewModel.segmentControllerCellIdentifier) as! SegmentControllerTableViewCell
+            return cell
+        } else if viewModel.objects.component[indexPath.row] == .brightnessAdjustment {
+            let cell = tableView.dequeueReusableCell(withIdentifier: viewModel.brightnessAdjustCellIdentifier) as! BrightnessTableViewCell
             return cell
         } else {
             let cell = UITableViewCell()
